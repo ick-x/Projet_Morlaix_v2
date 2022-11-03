@@ -10,6 +10,10 @@ nav {
   background-color: #7c7c7c;
 }
 
+.bg-nvbar {
+  background-color :#f8f9fa 
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -75,9 +79,11 @@ p {
   justify-content: center;
 }
 
+
+
 .bck-img {
-  background-image: url("../image/ville-morlaix-aerienne.jpg");
-  background-size: cover;
+  background: url("../image/ville-morlaix-aerienne.jpg");
+  background-size: cover
 }
 
 :root {
@@ -92,19 +98,18 @@ p {
 
 
 .elem {
-  padding : 2em 3em;
-  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2em 3em;
+  background-color: rgba(255, 255, 255, 0.95);
   transition: 0.75s;
-  pad
 }
 
 .elem:hover {
-  background-color: rgba(255, 255, 255, 0.955);
+  background-color: rgba(255, 255, 255, 1);
 
 }
 
 .bienvenue {
-  padding: 10% 0 !important;
+  padding: 10% 3em !important;
   order: 1;
 }
 
@@ -197,7 +202,7 @@ footer {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 810px) {
   .carte-meteo {
     flex-direction: column
   }
@@ -213,6 +218,17 @@ footer {
   #myBtn {
     bottom: 8px;
     right: 8px;
+  }
+
+  .bouttonsColonne {
+    z-index: 2;
+
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .corps {
+    padding: 0 0;
   }
 }
 
