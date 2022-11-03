@@ -143,6 +143,31 @@ p {
   margin: 2em auto;
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(164, 164, 164, 0.7);
+  color: rgb(0, 0, 0);
+  border : 1px solid rgb(0,0,0);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: rgba(117, 117, 117, 0.7);
+}
+
+.arrow-up {
+  width: 2em;
+}
+
 footer {
   background-color: rgb(177, 177, 177);
   font-size: 20px;
@@ -160,6 +185,16 @@ footer {
   }
   #logoMeteo {
     width: 55%;
+  }
+  #myBtn {
+    bottom: 8px;
+    right : 8px;
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
   }
 }
 
