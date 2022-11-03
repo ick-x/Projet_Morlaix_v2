@@ -1,0 +1,168 @@
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid 2px black;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#SearchBar {
+  border: 1px solid rgb(152, 152, 152);
+}
+
+#logoSite {
+  min-width: 100%;
+  height: 100%;
+}
+
+#logo {
+  padding: 0 !important;
+  height: 100px;
+  margin: 0 2%;
+}
+
+#logoTroisBarres {
+  height: 65px;
+  cursor: pointer;
+}
+
+
+#bouttonsColonne {
+  z-index: 1;
+  position: fixed;
+  float: left;
+  height: calc(100vh - 110px);
+  width: 200px;
+  min-width: 200px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  display: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+.btn {
+  width: 60%;
+  height: 75px;
+  margin: 10% 20%;
+  display: block;
+}
+
+.container-colonne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-ligne {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.corps {
+  font-family: inherit;
+  padding: 0 18%;
+  text-align: center;
+
+}
+
+.bienvenue {
+  padding: 10% 0;
+  order: 1;
+}
+
+.bienvenue p {
+  font-size: 1em;
+  padding-top: 2%;
+}
+
+.article {
+  padding: 3% 0;
+  text-align: center;
+  order: 3;
+}
+
+.article p {
+  padding-top: 2%;
+  text-align: justify;
+  font-size: 1em;
+}
+
+.carte-meteo {
+  order: 2;
+  justify-content: space-around;
+}
+
+
+.carte svg {
+  height: 390px;
+  width: 350px;
+  align-self: center;
+}
+
+.carte path:hover {
+  fill: #44362e;
+}
+
+#logoMeteo {
+  width: 75%;
+  align-self: center;
+}
+
+.calendrier {
+  order: 4;
+}
+
+.liens {
+  justify-content: space-around;
+  order: 5;
+}
+
+.liens h5 {
+  padding: 3% 0;
+}
+
+.logo-network {
+  width: 50px;
+  margin: 2em auto;
+}
+
+footer {
+  background-color: rgb(177, 177, 177);
+  font-size: 20px;
+  text-align: center;
+  padding: 8em 0;
+}
+
+
+@media screen and (max-width: 600px) {
+  .carte-meteo {
+    flex-direction: column
+  }
+  .corps {
+    padding : 7%;
+  }
+  #logoMeteo {
+    width: 55%;
+  }
+}
+
+
+.dropdown-menu {
+  left: initial !important;
+}
