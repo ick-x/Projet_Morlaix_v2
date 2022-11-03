@@ -1,22 +1,17 @@
-.sticky {
-  position: sticky;
-  top: 0;
-  width: 100%
-}
-
 nav {
   display: flex;
   justify-content: space-around;
   border-bottom: solid 2px black;
 }
 
-.navbar-collapse {
-  flex-grow: 0;
+
+.dropdown-item:active {
+  background-color: #7c7c7c;
 }
 
 p {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
 }
 
 #SearchBar {
@@ -40,7 +35,7 @@ p {
 }
 
 
-#bouttonsColonne {
+.bouttonsColonne {
   z-index: 1;
   position: fixed;
   float: left;
@@ -60,6 +55,11 @@ p {
   height: 75px;
   margin: 10% 20%;
   display: block;
+  border: 1px solid rgb(46, 46, 46);
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 .2rem rgba(123, 123, 123, .25);
 }
 
 .container-colonne {
@@ -74,10 +74,33 @@ p {
   justify-content: center;
 }
 
+:root {
+  --additionnal-padding: 200px;
+  --compteur : 0;
+}
+
+
 .corps {
   font-family: inherit;
-  padding: 0 18%;
+  /* padding: 0 15%; */
   text-align: center;
+
+  background-image: url("../image/ville-morlaix-aerienne.jpg");
+  background-size: cover;
+  
+}
+
+
+
+
+.elem {
+  padding-left: 2em !important;
+  padding-right: 2em !important;
+  background-color: rgba(255,255,255,0.8); 
+  transition: 1s;
+}
+.elem:hover {
+  background-color: rgba(255,255,255,0.95); 
 
 }
 
@@ -152,16 +175,16 @@ p {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: rgba(164, 164, 164, 0.7);
+  background-color: rgba(230, 230, 230, 0.9);
   color: rgb(0, 0, 0);
-  border : 1px solid rgb(0,0,0);
+  border: 1px solid rgb(0, 0, 0);
   cursor: pointer;
   padding: 8px;
   border-radius: 4px;
 }
 
 #myBtn:hover {
-  background-color: rgba(117, 117, 117, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .arrow-up {
@@ -180,15 +203,18 @@ footer {
   .carte-meteo {
     flex-direction: column
   }
+
   .corps {
-    padding : 7%;
+    padding: 7%;
   }
+
   #logoMeteo {
     width: 55%;
   }
+
   #myBtn {
     bottom: 8px;
-    right : 8px;
+    right: 8px;
   }
 }
 
