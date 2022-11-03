@@ -131,6 +131,7 @@ p {
 .liens {
   justify-content: space-around;
   order: 5;
+  flex-wrap: wrap;
 }
 
 .liens h5 {
