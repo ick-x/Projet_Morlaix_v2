@@ -92,10 +92,10 @@ p {
 
 
 .elem {
-  padding-left: 2em !important;
-  padding-right: 2em !important;
+  padding : 2em 3em;
   background-color: rgba(255, 255, 255, 0.8);
   transition: 0.75s;
+  pad
 }
 
 .elem:hover {
@@ -104,7 +104,7 @@ p {
 }
 
 .bienvenue {
-  padding: 10% 0;
+  padding: 10% 0 !important;
   order: 1;
 }
 
@@ -114,7 +114,6 @@ p {
 }
 
 .article {
-  padding: 3% 0;
   text-align: center;
   order: 3;
 }
