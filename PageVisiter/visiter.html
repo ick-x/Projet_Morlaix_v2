@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="">
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="js/visiter.js"></script>
+  <title>Morlaix Communauté</title>
+</head>
+
+<body>
+  <header class="sticky-top" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img class="navItem" id="logoTroisBarres" src="../image/LogoTroisBarres.png">
+      <a class="d-block navItem" id="logo" href="../index.html"><img class="navItem" id="logoSite"
+          src="../image/logo-menu.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mx-auto bg-nvbar" id="navbarNavDropdown" style="width: 80%">
+        <ul class="navbar-nav w-100 d-flex justify-content-around">
+          <li class="navItem">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              La Communauté
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Les Compétences</a>
+              <a class="dropdown-item" href="#">Présentation</a>
+              <a class="dropdown-item" href="#">Commande Publique</a>
+              <a class="dropdown-item" href="#">Histoire</a>
+              <a class="dropdown-item" href="#">Les élus</a>
+              <a class="dropdown-item" href="#">Trajectoire 2030</a>
+              <a class="dropdown-item" href="#">Bro Montroulez</a>
+              <a class="dropdown-item" href="#">Les Assemblées</a>
+              <a class="dropdown-item" href="#">Rapport d'Activités 2020</a>
+              <a class="dropdown-item" href="#">Catalogue des Tarifs</a>
+              <a class="dropdown-item" href="#">Délégation des Services Publics</a>
+              <a class="dropdown-item" href="#">Finances</a>
+            </div>
+          </li>
+          <li class="navItem">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Domaines D'actions
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Economie</a>
+              <a class="dropdown-item" href="#">Aménagement de l'espace</a>
+              <a class="dropdown-item" href="#">Développement Durable</a>
+              <a class="dropdown-item" href="#">Système d'Information Géographique</a>
+              <a class="dropdown-item" href="#">Les élus</a>
+              <a class="dropdown-item" href="#">Transports et Déplacements</a>
+              <a class="dropdown-item" href="#">Habitat - Logement</a>
+              <a class="dropdown-item" href="#">Tourisme</a>
+              <a class="dropdown-item" href="#">Mer et Littoral</a>
+              <a class="dropdown-item" href="#">Cohésion Sociale - Jeunesse</a>
+              <a class="dropdown-item" href="#">Collecte et Valorisation des Déchets</a>
+              <a class="dropdown-item" href="#">Milieux Naturels</a>
+              <a class="dropdown-item" href="#">Enseignement Supérieur</a>
+              <a class="dropdown-item" href="#">Eau et Assainissement</a>
+            </div>
+          </li>
+          <li class="navItem">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Les Grands Projets
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Le Pôle d'Echange Multimodal</a>
+              <a class="dropdown-item" href="#">Réhabilitation de la Manufacture</a>
+              <a class="dropdown-item" href="#">ZAC de St Fiacre</a>
+              <a class="dropdown-item" href="#">Modernisation de l'Aéroport de l'Aéroport Morlaix Ploujean</a>
+              <a class="dropdown-item" href="#">Aménagement des ports</a>
+              <a class="dropdown-item" href="#">Le PLUI-H</a>
+            </div>
+          </li>
+          <li class="navItem">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Les Equipements
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Le Rail Route</a>
+              <a class="dropdown-item" href="#">Les ZA</a>
+              <a class="dropdown-item" href="#">Les Ports - L'Aéroport Morlaix</a>
+              <a class="dropdown-item" href="#">La Manufacture des Tabacs</a>
+              <a class="dropdown-item" href="#">L'Auberge de Jeunesse</a>
+              <a class="dropdown-item" href="#">L'espace Aquatique</a>
+              <a class="dropdown-item" href="#">La Cafét'</a>
+              <a class="dropdown-item" href="#">La Maison des Penanault</a>
+              <a class="dropdown-item" href="#">Les Déchèteries Communautaires</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!---->
+      <div class="navItem">
+        <input type="text" id="SearchBar" onkeyup="myFunction()" placeholder="Rechercher...">
+      </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  </header>
+  <div class="bck-img">
+    <div class="bouttonsColonne">
+      <div class="contenu>">
+        <button class="btn" onClick="window.open('../PageHabiter/habiter.html')">Habiter</button>
+        <button class="btn">Se Déplacer</button>
+        <button class="btn">Entreprendre</button>
+        <button class="btn" onClick="window.open('./visiter.html')">Visiter / Sortir</button>
+        <button class="btn">Grandir</button>
+        <button class="btn">Aménager<br>Durablement</button>
+        <button class="btn">Réduire, Trier<br>les Déchets</button>
+        <button class="btn">Etudier</button>
+        <button class="btn">Vivre<br>Ensemble</button>
+      </div>
+      <script src="../JS/button.js"></script>
+    </div>
+
+
+
+    <link rel="stylesheet" href="CSS/visiter.css">
+    <div id="menu">
+      <ul>
+        <a href="https://www.morlaix-communaute.bzh/Visiter-Sortir"><li id="ongletCourant">Accueil</li></a>
+        <a href="https://www.morlaix-communaute.bzh/Visiter-Sortir/Office-de-tourisme-de-Morlaix"><li>Office de Tourisme de Morlaix</li></a>
+        <a href="https://www.morlaix-communaute.bzh/Visiter-Sortir/La-Maison-Penanault"><li>La maison de Penanault</li></a>
+        <a href="https://www.morlaix-communaute.bzh/Visiter-Sortir/La-Manufacture-des-Tabacs"><li>La Manufacture des Tabacs</li></a>
+        <a href="https://www.morlaix-communaute.bzh/Visiter-Sortir/Animations-patrimoniales-et-culturelles"><li>Animations patrimoniales et culturelles</li></a>
+        <a href="https://www.morlaix-communaute.bzh/Visiter-Sortir/Equipements-culturels"><li>Equipements culturels</li></a>
+        <a href="https://www.morlaix-communaute.bzh/Visiter-Sortir/Equipements-sportifs"><li>Equipements sportifs</li></a>
+        <a href="https://www.morlaix-communaute.bzh/Visiter-Sortir/Associations"><li>Associations</li></a>
+        <a href="https://www.morlaix-communaute.bzh/Visiter-Sortir/Equipements-evenementiels"><li>Equipements évènementiels</a></li>
+      </ul>
+    </div>
+      <div id="cadre">
+        
+          <div id="lecteur">
+            <div id="article"></div>  
+            <div id="controleurs">
+              <div class="titre"></div>
+              <div id="previous">
+                <input type="button" value="/">
+              </div>
+              <div id="ronds"></div>
+              <div id="next">
+                <input type="button" value="/">
+              </div>
+              <div class="titre"></div>
+            </div>
+          </div>
+          <ul id="listeTitre"></ul>
+      </div>
+
+    <div id="data">
+      <article class="datArt" lien="https://www.morlaix-communaute.bzh/Visiter-Sortir/Actualites/Le-Morlaix-Arts-Tour-MAT-2022">
+        <h1 class="titres">Le Morlaix Arts Tour [MAT] 2022 </h1>
+        <p>
+
+          Après une 1re édition en 2019, le MAT a pris ses marques sur le territoire de Morlaix Communauté. C'est
+          désormais un rendez-vous incontournable de l'art urbain permettant de découvrir de monumentales fresques dans
+          nos communes.
+
+          2021, année de la consécration ! Le Golden Street Art a été décerné à la fresque de Leon Keer "Kit de secours"
+          positionnée à Plougasnou.
+          Morlaix Arts Tour : une tournée qui s’étend
+
+          ou quand le patrimoine historique et le street art font bon ménage !
+
+          9 nouvelles communes accueillont les fresques murales géantes : Garlan, Henvic, Lanmeur, Lannéanou, Le
+          Cloître-Saint-Thégonnec, Plouégat-Moysan, Plouezoc’h, Plougonven, Plouigneau. 7 nouvelles oeuvres (dont celle
+          de B. Brejcha déjà sortie) viendront s’ajouter à celles déjà existantes à Morlaix.
+          Les oeuvres ont été réalisées au fil de l’eau courant juin.
+
+          Téléchargez l’application mobile MX ART CONNECT sur Google Play et App Store.
+          Téléchargez le programme
+
+          Portée par l’artiste morlaisien ZAG, TAKAD GRAFAÑ (ou Zone À Graffer) est une association basée à Morlaix,
+          dont le but est de promouvoir l’art urbain, autant que la culture et la langue bretonne. Elle est, entre
+          autre, organisatrice du
+          MX ARTS TOUR de Morlaix.
+          Pour cette quatrième édition, la direction artistique de l’événement reste portée par Georges Zannol, membre
+          de l’association.
+          Takad Grafañ a ainsi sollicité vingt artistes dont l’univers de création explore différentes esthétiques du
+          street art, et dont les 17 réalisations de cette édition 2022 complètent et enrichissent le parcours d’œuvres
+          déjà en place.
+          Le mois de juin a vu se succéder le travail des artistes dont l’identité est restée secrète jusqu’au dernier
+          moment. Les artistes ont été invités à s’exprimer librement sur des surfaces déterminées en accord avec les
+          propriétaires et en lien avec l’Architecte des Bâtiments de France.
+          Takad Grafañ
+
+        </p>
+      </article>
+
+      <article class="datArt" lien="https://www.morlaix-communaute.bzh/Visiter-Sortir/Actualites/Morlaix-de-Penanault-a-la-Manu">
+        <h1 class="titres">Morlaix : de Penanault à la Manu </h1>
+        <p>
+
+          Au fil de l'eau, petits secrets patrimoniaux
+          
+          Découvrez la cité du Viaduc autrement, à travers une balade historique au fil de l’eau… Le long de la rivière de Morlaix, ria née de la confluence du Jarlot et du Queffleuth, plongez dans la petite et la grande Histoire de trois sites emblématiques du paysage morlaisien : la Manufacture des Tabacs, la Maison Penanault et le port de Morlaix. Ici, vous seront révélés vingt et un secrets sur ce patrimoine incontournable de cette ville d’Art et d’Histoire rivée au creux de la Baie de Morlaix !
+        </p>
+      </article>
+
+      <article class="datArt" lien="https://www.morlaix-communaute.bzh/Visiter-Sortir/Actualites/Les-creatifs-de-la-baie-de-Morlaix">
+        <h1 class="titres">Les créatifs de la baie de Morlaix</h1>
+        <p>
+          L'annuaire 2020-2021<br/>
+          500 créatifs + 59 communes
+         Découvrez, soutenez, rencontrez les créatifs de la baie de Morlaix !
+         
+         Ils sont peintres, sculpteurs, créateurs de bijoux, dessinateurs, artisans d’art…
+         
+         Leur créativité foisonnante et plurielle compte parmi les richesses et les singularités de notre Baie de Morlaix.
+         Tout l’été, de Landivisau à Locquirec, en passant par Morlaix, Saint-Pol-de-Léon et jusqu’aux portes des Monts d’Arrée, rencontrez nos artistes au gré de vos balades.
+         Frappez aux portes de leurs ateliers, profitez d’un moment d’échange privilégié et découvrez leur travail et leurs œuvres.
+         Suivez le point jaune, il indique un atelier d'artiste ou une galerie
+         L’annuaire complet des créatifs de la Baie est disponible ici :
+         Annuaire des créatifs
+         
+         ==> Découvrir une liste (non exhaustive) des ateliers qui vous ouvrent leurs portes cet été en cliquant ici.
+         
+         Prenez contact auprès des accueils de les offices de tourisme de la Baie de Morlaix et les offices de tourisme de Roscoff Côte des Sables pour en savoir plus.
+         02 98 62 14 94
+        </p>
+      </article>
+    </div>
+
+
+
+
+    <div class="corps container-colonne">
+
+      <div class="elem liens container-colonne">
+        <h2>Nos réseaux sociaux :</h2>
+        <h5><i>Suivez l'actualité en temps réel...</i></h5>
+        <div class="liens container-ligne">
+          <div id="Twitter">
+            <p>sur <b>Twitter</b></p>
+            <a class="logo-network" href="https://twitter.com/Morlaix_Attract" target="_blank"><img class="logo-network"
+                id="logoTwitter" src="../image/twitter.svg"></a>
+          </div>
+
+          <div id="Facebook">
+            <p>sur <b>Facebook</b></p>
+            <a class="logo-network" href="https://www.facebook.com/MorlaixCommunauteOfficiel/" target="_blank"><img
+                class="logo-network" id="logoFacebook" src="../image/facebook.svg"></a>
+          </div>
+
+          <div id="Youtube">
+            <p>Ou vivez la région à travers notre chaine <b>Youtube</b></p>
+            <a class="logo-network" href="https://www.youtube.com/user/morlaixFR/feed" target="_blank"><img
+                class="logo-network" id="logoYoutube" src="../image/youtube.svg"></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="topButton">
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><img class="arrow-up" src="../image/arrow-up-short.svg">
+      </button>
+      <script src="JS/topButton.js"></script>
+    </div>
+  </div>
+
+  <footer>
+    <p>Site réalisé par : Alexis Montculier, Romain Groult et Axel Brun</p>
+    <p> &copy; Université de Paris 2022-2023</p>
+  </footer>
+
+
+
+
+</body>
+
+</html>

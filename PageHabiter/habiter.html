@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <title>Morlaix Communauté</title>
+</head>
+
+<body>
+    <header class="sticky-top" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img class="navItem" id="logoTroisBarres" src="image/LogoTroisBarres.png">
+            <a class="d-block navItem" id="logo" href="../index.html"><img class="navItem" id="logoSite"
+                    src="image/logo-menu.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-auto bg-nvbar" id="navbarNavDropdown" style="width: 80%">
+                <ul class="navbar-nav w-100 d-flex justify-content-around">
+                    <li class="navItem">
+                        <a class="nav-link dropdown-toggle" href="https://www.morlaix-communaute.bzh/La-Communaute"
+                            id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            La Communauté
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/La-Communaute/Presentation">Présentation</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/La-Communaute/Les-competences">Les
+                                Compétences</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/La-Communaute/Commande-publique">Commande
+                                Publique</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/La-Communaute/Histoire">Histoire</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/La-Communaute/Les-elus">Les élus</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/La-Communaute/Trajectoire-2030-Projet-de-Territoire-de-Morlaix-Communaute">Trajectoire
+                                2030</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/La-Communaute/Bro-Montroulez">Bro
+                                Montroulez</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/La-Communaute/Les-assemblees">Les
+                                Assemblées</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/La-Communaute/Le-rapport-d-activites-2020">Rapport
+                                d'Activités 2020</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/La-Communaute/Catalogue-des-tarifs">Catalogue
+                                des Tarifs</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/La-Communaute/Delegations-de-services-publics">Délégation
+                                des Services Publics</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/La-Communaute/Finances2">Finances</a>
+                        </div>
+                    </li>
+                    <li class="navItem">
+                        <a class="nav-link dropdown-toggle" href="https://www.morlaix-communaute.bzh/Domaines-d-actions"
+                            id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Domaines D'actions
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Domaines-d-actions/Economie">Economie</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Domaines-d-actions/Amenagement-de-l-espace">Aménagement
+                                de l'espace</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Domaines-d-actions/Developpement-durable">Développement
+                                Durable</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Domaines-d-actions/Systeme-d-Information-Geographique-SIG">Système
+                                d'Information Géographique</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Domaines-d-actions/Transports-et-Deplacements">Transports
+                                et Déplacements</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Domaines-d-actions/Habitat-Logement">Habitat -
+                                Logement</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Domaines-d-actions/Tourisme">Tourisme</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Domaines-d-actions/Mer-et-littoral">Mer et
+                                Littoral</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Domaines-d-actions/Cohesion-sociale-Jeunesse">Cohésion
+                                Sociale - Jeunesse</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Domaines-d-actions/Collecte-et-valorisation-des-dechets">Collecte
+                                et Valorisation des Déchets</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Domaines-d-actions/Milieux-naturels">Milieux
+                                Naturels</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Domaines-d-actions/Enseignement-superieur">Enseignement
+                                Supérieur</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Domaines-d-actions/Eau-et-Assainissement">Eau
+                                et Assainissement</a>
+                        </div>
+                    </li>
+                    <li class="navItem">
+                        <a class="nav-link dropdown-toggle" href="https://www.morlaix-communaute.bzh/Les-grands-projets"
+                            id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Les Grands Projets
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Les-grands-projets/Le-Pole-d-echanges-Multimodal-P.E.M">Le
+                                Pôle d'Echange Multimodal</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Les-grands-projets/Rehabilitation-de-la-Manufacture">Réhabilitation
+                                de la Manufacture</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Les-grands-projets/ZAC-de-St-Fiacre">ZAC de St
+                                Fiacre</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Les-grands-projets/Modernisation-de-l-aeroport-Morlaix-Ploujean">Modernisation
+                                de l'Aéroport Morlaix Ploujean</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Les-grands-projets/Amenagement-des-ports">Aménagement
+                                des ports</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Les-grands-projets/Le-PLUI-H">Le PLUI-H</a>
+                        </div>
+                    </li>
+                    <li class="navItem">
+                        <a class="nav-link dropdown-toggle" href="https://www.morlaix-communaute.bzh/Les-equipements"
+                            id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Les Equipements
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Les-equipements/Le-Rail-Route">Le Rail
+                                Route</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Les-equipements/Les-ZA">Les ZA</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Les-equipements/Les-ports">Les Ports</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Les-equipements/La-Manufacture-des-Tabacs">La
+                                Manufacture des Tabacs</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Les-equipements/L-Auberge-de-jeunesse">L'Auberge
+                                de Jeunesse</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Les-equipements/L-Espace-aquatique">L'espace
+                                Aquatique</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Les-equipements/La-Cafet">La Cafét'</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Les-equipements/La-maison-Penanault2">La Maison
+                                Penanault</a>
+                            <a class="dropdown-item"
+                                href="https://www.morlaix-communaute.bzh/Les-equipements/Les-decheteries-communautaires">Les
+                                Déchèteries Communautaires</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="navItem">
+                <input type="text" id="SearchBar" onkeyup="myFunction()" placeholder="Rechercher...">
+            </div>
+        </nav>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    </header>
+    <div class="bck-img">
+        <div class="bouttonsColonne">
+            <div class="contenu>">
+                <button class="btn" onClick="window.open('./habiter.html')">Habiter</button>
+                <a href="https://www.morlaix-communaute.bzh/Se-deplacer"><button class="btn">Se Déplacer</button></a>
+                <a href="https://www.morlaix-communaute.bzh/Entreprendre"><button class="btn">Entreprendre</button></a>
+                <button class="btn" onClick="window.open('../PageVisiter/visiter.html')">Visiter / Sortir</button>
+                <a href="https://www.morlaix-communaute.bzh/Grandir"><button class="btn">Grandir</button></a>
+                <a href="https://www.morlaix-communaute.bzh/Amenager-durablement"><button
+                        class="btn">Aménager<br>Durablement</button></a>
+                <a href="https://www.morlaix-communaute.bzh/Reduire-trier-les-dechets"><button class="btn">Réduire,
+                        Trier<br>les Déchets</button></a>
+                <a href="https://www.morlaix-communaute.bzh/Etudier"><button class="btn">Etudier</button></a>
+                <a href="https://www.morlaix-communaute.bzh/Vivre-ensemble"><button
+                        class="btn">Vivre<br>Ensemble</button></a>
+            </div>
+            <script src="JS/button.js"></script>
+        </div>
+        <br>
+        <div class="corps container-colonne">
+            <div class="elem article">
+                <h2>Habiter, trouver un logement, entreprendre des travaux, rénover ?</h2><br>
+                <p>
+                    Trouvez des réponses à vos questions et faites le tour de la question avant de démarrer vos travaux.
+                    Des solutions et des interlocuteurs peuvent vous accompagner.
+                </p>
+            </div>
+        </div>
+        <div class="corps container-colonne">
+            <div class="elem article">
+                <h4>Un projet habitat ? Faites-vous coacher gratuitement !</h4><br>
+                <p>
+                    Salon de l'habitat - 29, 30, 31 oct. et 1er nov. 2022
+                    Bénéficiez d’une séance de coaching d’1h avec un professionnel de l’architecture et de l’urbanisme,
+                    pour étudier votre projet d’habitat !
+                    <a
+                        href="https://www.morlaix-communaute.bzh/Habiter/Actualites/Un-projet-habitat-Faites-vous-coacher-gratuitement">
+                        Lire la suite...</a>
+                </p>
+            </div>
+            <br>
+            <div class="elem article">
+                <h4>Crise sanitaire : dispositif d'aide au paiement des loyers</h4>
+                <p>
+                    Une plateforme d'aide pour les locataires en difficulté.
+                    <a
+                        href="https://www.morlaix-communaute.bzh/Habiter/Actualites/Crise-sanitaire-dispositif-d-aide-au-paiement-des-loyers">
+                        Cliquez ici pour en savoir plus !
+                    </a>
+                </p>
+            </div>
+            <br>
+            <div class="elem article">
+                <h4>Instruction des autorisations d'urbanisme</h4>
+                <p>
+                    La loi pour l'accès au logement et un urbanisme rénovés du 24 mars 2014 (dite « ALUR »)
+                    a décidé la <b>fin de la mise à disposition gratuite des services de l'Etat</b> pour l'instruction
+                    des demandes d'urbanisme déposées dans les mairies, à compter du 1er juillet 2015.
+                </p>
+                <p>
+                    Cela concerne toutes les communes regroupées dans une communauté de plus de 10 000 habitants et
+                    qui ont la compétence « urbanisme », donc au minimum toutes les communes qui ont un Plan Local
+                    d'Urbanisme.
+                    <a
+                        href="https://www.morlaix-communaute.bzh/Habiter/Actualites/Instruction-des-autorisations-d-urbanisme">
+                        Lire la suite...
+                    </a>
+                </p>
+            </div>
+            <br>
+            <div class="elem article">
+                <h4>Permanence de l'ADIL</h4>
+                <p>
+                    L'Agence Départementale d'Informations sur le Logement (ADIL) est un organisme de juristes qui ont
+                    pour mission,
+                    d'après l'article L.336-1 du code de la construction et de l'habitation,
+                    d'informer gratuitement les usagers sur leurs droits et obligations, sur les solutions de logement
+                    qui leur sont adaptées,
+                    notamment sur les conditions d'accès au parc locatif et sur les aspects juridiques et financiers de
+                    leur projet d'accession
+                    à la propriété, ceci à l'exclusion de tout acte administratif, contentieux ou commercial.<br>
+                    <a href="https://www.morlaix-communaute.bzh/Habiter/Se-renseigner">
+                        <img src="./image/permAdil.png">
+                    </a>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="corps container-colonne">
+            <div class="elem liens container-colonne">
+                <h2>Nos réseaux sociaux :</h2>
+                <h5><i>Suivez l'actualité en temps réel...</i></h5>
+                <div class="liens container-ligne">
+                    <div id="Twitter">
+                        <p>sur <b>Twitter</b></p>
+                        <a class="logo-network" href="https://twitter.com/Morlaix_Attract" target="_blank"><img
+                                class="logo-network" id="logoTwitter" src="image/twitter.svg"></a>
+                    </div>
+
+                    <div id="Facebook">
+                        <p>sur <b>Facebook</b></p>
+                        <a class="logo-network" href="https://www.facebook.com/MorlaixCommunauteOfficiel/"
+                            target="_blank"><img class="logo-network" id="logoFacebook" src="image/facebook.svg"></a>
+                    </div>
+
+                    <div id="Youtube">
+                        <p>Ou vivez la région à travers notre chaine <b>Youtube</b></p>
+                        <a class="logo-network" href="https://www.youtube.com/user/morlaixFR/feed" target="_blank"><img
+                                class="logo-network" id="logoYoutube" src="image/youtube.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="topButton">
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><img class="arrow-up"
+                    src="image/arrow-up-short.svg">
+            </button>
+            <script src="JS/topButton.js"></script>
+        </div>
+    </div>
+    <footer>
+        <p>Site réalisé par : Alexis Montculier, Romain Groult et Axel Brun</p>
+        <p> &copy; Université de Paris 2022-2023</p>
+    </footer>
+</body>
+
+</html>
